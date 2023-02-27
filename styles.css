@@ -1,0 +1,91 @@
+@font-face {
+  font-family: 'Cascadia';
+  src: url(ttf/CascadiaCode.ttf) format(truetype);
+}
+
+:root{
+  --clr-black: black;
+  --clr-white: white;
+  --clr-vsblue: rgb(0, 196, 240);
+  --cl-darkerblue: rgb(0, 49, 148);
+}
+
+*{  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'inter', sans-serif;
+  font-weight: '400';
+}
+
+/*nav*/
+
+ul{
+  display: flex;
+  list-style: none;
+  color: var(--clr-black);
+  font-size: 1.4rem;
+  padding: 20px;
+  justify-content: flex-end;
+}
+
+ul li a{
+  text-decoration: none;
+  color: var(--clr-black);
+  padding-left: 1.4rem;
+  padding-right: 1.4rem;
+}
+
+/* animation container */
+
+.animation-container{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10rem;
+}
+
+h1{
+  font-family: 'Cascadia';
+  font-size: 110px;
+  color: var(--clr-vsblue);
+}
+
+h2{
+  color: var(--cl-darkerblue);
+}
+
+.content{
+  display: grid;
+  grid-template-columns: 720px ;
+  align-items: center;
+  justify-content: center;
+}
+
+.content p{
+  padding-top: 1.4rem;
+  font-size: 1.4rem;
+}
+
+.tool-container{
+  padding-top: 1rem;
+  margin-top: 10rem;
+  border: 5px solid var(--cl-darkerblue);
+  border-radius: 10px;
+  display: grid;
+}
+
+.title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tools{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
