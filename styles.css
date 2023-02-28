@@ -7,7 +7,8 @@
   --clr-black: black;
   --clr-white: white;
   --clr-vsblue: rgb(0, 196, 240);
-  --cl-darkerblue: rgb(0, 49, 148);
+  --clr-darkerblue: rgb(0, 49, 148);
+  --clr-vsgrey: rgb(38, 38, 38);
 }
 
 *{  
@@ -16,12 +17,20 @@
   box-sizing: border-box;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 body{
   font-family: 'inter', sans-serif;
   font-weight: '400';
 }
 
 /*nav*/
+
+nav{
+  background-color: var(--clr-vsgrey);
+}
 
 ul{
   display: flex;
@@ -34,12 +43,26 @@ ul{
 
 ul li a{
   text-decoration: none;
-  color: var(--clr-black);
+  color: var(--clr-white);
   padding-left: 1.4rem;
   padding-right: 1.4rem;
 }
 
 /* animation container */
+
+.header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--clr-vsgrey);
+  height: 100vh;
+  font-size: 1.3rem;
+}
+
+.header p{
+  color: var(--clr-vsblue);
+  padding-top: 1.4rem;
+}
 
 .animation-container{
   display: flex;
@@ -52,7 +75,26 @@ ul li a{
 h1{
   font-family: 'Cascadia';
   font-size: 110px;
+  margin-left: -20px;
   color: var(--clr-vsblue);
+  width: calc(100% + 20px);
+  border-right: 5px solid;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 1.8s steps(11),
+  cursor .4s step-end infinite alternate;
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+    
+@keyframes cursor {
+  50% {
+    border-color: transparent
+  }
 }
 
 h2{
@@ -66,15 +108,12 @@ h2{
   justify-content: center;
 }
 
-.content p{
-  padding-top: 1.4rem;
-  font-size: 1.4rem;
-}
+
 
 .tool-container{
   padding-top: 1rem;
   margin-top: 10rem;
-  border: 5px solid var(--cl-darkerblue);
+  border: 5px solid var(--clr-darkerblue);
   border-radius: 10px;
   display: grid;
 }
