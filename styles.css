@@ -1,6 +1,7 @@
 @font-face {
   font-family: 'Cascadia';
   src: url(ttf/CascadiaCode.ttf) format(truetype);
+  --border-width: 3px;
 }
 
 :root{
@@ -37,7 +38,7 @@ ul{
   list-style: none;
   color: var(--clr-black);
   font-size: 1.4rem;
-  padding: 20px;
+  padding: 1.5rem;
   justify-content: flex-end;
 }
 
@@ -97,8 +98,26 @@ h1{
   }
 }
 
-button{
-  top: 90%;
+.header button{
+  border: none;
+  height: 6rem;
+  width: 6rem;
+  background-color: var(--clr-vsblue);
+  border-radius: 50%;
+  font-weight: 800;
+  color: var(--clr-white);
+  cursor: pointer;
+  box-shadow: 0 10px 10px rgba(0,0,0,0.3);
+  transition: all 200ms ease-in-out;
+}
+
+.content-button{
+  position: absolute;
+  top: 80vh;
+}
+
+.header button:hover{
+  background-color: var(--clr-darkerblue);
 }
 
 
@@ -118,7 +137,7 @@ h2{
 
 .content{
   display: grid;
-  grid-template-columns: 800px ;
+  grid-template-columns: 720px ;
   align-items: center;
   justify-content: center;
 }
@@ -130,6 +149,15 @@ h2{
   border-radius: 10px;
   display: grid;
   margin-bottom: 2rem;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+
+
+@keyframes moveGradient {
+50% {
+  background-position: 100% 50%;
+}
 }
 
 .tools{
@@ -147,11 +175,20 @@ h2{
 }
 
 .element img{
-  height: 100px;
+  height: 90px;
   width: auto;
 }
 
 .element p{
   padding-top: 0.8rem;
   font-weight: 400;
+}
+
+.projects .title{
+  padding-top: 3rem;
+}
+
+.grid-col-2{
+  display: grid;
+  grid-template-columns: 1fr 3fr;
 }
