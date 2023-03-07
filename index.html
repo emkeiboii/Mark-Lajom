@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mark Lajom's Portfolio</title>
+  <title>Mark Lajom - Personal Portfolio</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,9 +13,9 @@
 <body>
   <nav>
     <ul>
-      <li><a href="">About</a></li>
-      <li><a href="">Blog</a></li>
-      <li><a href="">Contact</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="">See CV</a></li>
     </ul>
   </nav>
   <div class="header">
@@ -27,8 +27,8 @@
     <a href="#content"><button>scroll down</button></a>
   </div>
   </div>
-  <div class="content">
-        <div class="tool-container" id="content">
+  <div class="content" id="content">
+        <div class="tool-container">
           <div class="title">
             <h2>Tools</h2>
           </div>
@@ -76,6 +76,30 @@
               <h3>Lifestyle</p>
             </div>
             <div>
+              <p>Lifestyle is a blog, made with HTML, CSS and Javascript, it's equipped with tools, apps and advices made to build good habits and an healthy lifestyle.</p>
+              <img>
+              <img>
+              <button><a>Live Demo</a></button>
+              <button><a>See Code</a></button>
+            </div>
+          </div>
+          <div class="grid-col-2">
+            <div>
+              <h3>Lifestyle</p>
+            </div>
+            <div>
+              <p>Lifestyle is a group of web pages made to inspire and help those who want to improve themselves, through tools and advice.</p>
+              <img>
+              <img>
+              <button><a>Live Demo</a></button>
+              <button><a>See Code</a></button>
+            </div>
+          </div>
+          <div class="grid-col-2">
+            <div>
+              <h3>Lifestyle</p>
+            </div>
+            <div>
               <p>Lifestyle is a group of web pages made to inspire and help those who want to improve themselves, through tools and advice.</p>
               <img>
               <img>
@@ -84,6 +108,22 @@
             </div>
           </div>
         </div>
+        <div class="container" id="contact">
+          <h4>Contact me!</h4>
+          <form class="group-form" action="">
+            <input type="text" name="full" placeholder="Full Name">
+            <input type="text" name="E-mail" placeholder="E-mail address">
+            <textarea type="text" name="Comment" placeholder="Write a message!"></textarea>
+            <button type="submit">Send</button>
+          </form>
+        </div>
+        <footer>
+          <div>
+            <a href=""><img src="images/github.png"></a>
+            <a href=""><img src="images/linkedin.png"></a>
+          </div>
+          <h5>Mark Lajom 2023</h5>
+        </footer>
   </div>
 </body>
 </html>
