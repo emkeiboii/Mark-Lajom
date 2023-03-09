@@ -64,8 +64,9 @@ ul li a{
 
 .header p{
   color: var(--clr-vsblue);
-  font-family: 'Cascadia', sans-serif;
-  padding-top: 1.2rem;
+  font-family: 'Cascadia', sans-serif; 
+  padding: 1.2rem;
+  text-align: center;
 }
 
 .animation-container{
@@ -147,7 +148,7 @@ h4{
 
 .content{
   display: grid;
-  grid-template-columns: 720px ;
+  grid-template-columns: 720px;
   align-items: center;
   justify-content: center;
 }
@@ -219,7 +220,7 @@ h3{
 /* Email form */
 
 .container{
-  padding: 80px 100px 80px 100px;
+  padding: 70px 100px 80px 100px;
   background-color: var(--clr-lightgrey);
 }
 
@@ -300,7 +301,29 @@ footer div{
 
 
 @media screen and (max-width:770px){
+.content{
+  grid-template-columns: 400px;
+}
+
+.header p{
+  font-size: 1rem;
+}
+
 h1{
   font-size: 60px;
 }
+
+.tools{
+  grid-template-columns: auto auto;
+}
+
+.element img{
+  height: 70px;
+}
+
+.grid-col-2{
+display: flex;
+flex-direction: column;
+}
+
 }
